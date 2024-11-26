@@ -67,3 +67,15 @@ document.getElementById("contact").addEventListener("submit", (e) => {
 			}
 		);
 });  
+
+// Wait until the page is fully loaded
+window.onload = function() {
+	const loadingScreen = document.getElementById('loading-screen');
+	const landingPage = document.getElementById('landing-page');
+  
+	// Simulate a delay (e.g., 2 seconds) before hiding the loading screen
+	setTimeout(() => {
+	  loadingScreen.style.display = 'none'; // Hide the loading screen
+	  landingPage.classList.remove('hidden'); // Show the landing page
+	}, 2000); // 2000ms = 2 seconds
+  };
