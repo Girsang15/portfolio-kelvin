@@ -52,7 +52,7 @@ document.getElementById("contact").addEventListener("submit", (e) => {
   
 	// Kirim email
 	emailjs
-		.send("service_37by0fc", "template_ljklr77", {
+		.send("service_yfhsllh", "template_qiexlg5", {
 			from_name: name,
 			message: message,
 			reply_to: email,
