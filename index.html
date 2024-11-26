@@ -19,10 +19,143 @@
 			})();
 		</script>
 	</head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layar Loading</title>
+    <style>
+        /* Mengatur Body dan Pengaturan Tampilan */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #f0f0f0;
+            /* overflow: hidden; Agar tidak ada scroll selama loading */
+        }
+
+        /* Tampilan Loading Screen */
+        #loading-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /*background-color: rgba(255, 255, 255, 0.9); /* Sedikit transparansi */
+            z-index: 1000; /* Agar loading screen selalu tampil di atas */
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .message {
+            font-size: 22px;
+            color: hsl(0, 0%, 0%);
+            margin-bottom: 20px;
+        }
+
+        .quote {
+            font-size: 25px;
+            font-style: italic;
+            color: hsl(0, 0%, 0%);
+        }
+
+        .quote span {
+            display: block;
+            margin-top: 5px;
+        }
+
+		.Note span {
+			display: block;
+			margin-top: 5px;
+		}
+		.Note {
+            font-size: 15px;
+            font-style: italic;
+			font-weight: bolder;
+            color: hwb(0 2% 98%);
+        }
+        /* Tampilan Header */
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+            background-color: transparent;
+            padding: 20px 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .px-4 {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .py-6 {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+
+        .text-lg {
+            font-size: 1.125rem; /* 18px */
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+
+        .text-primary {
+            color: #3498db; /* Primary Color */
+        }
+
+        Menyesuaikan jarak antara konten
+        .container a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
 	<body>
 		<!-- Loading Screen -->
 		<div id="loading-screen">
-			<h1>Hai</h1>
+			<div class="message">
+				Hai Tunggu sebentar, pengalaman terbaik Anda sedang diproses
+			</div>
+			<div class="quote">
+				<span>"Menunggu adalah bagian kecil dari perjalanan menuju"</span>
+				<span>kesempurnaan."</span>
+			</div>
+			<div class="Note">
+				<span>"saat ini Jangan di Scrool"</span>
+				<span>nanti rusak heehe, tunggu sampai landing pagenya terbuka yaaa."</span>
+			</div>
+			
+			
 		</div>
 
 		<!-- Header Start -->
